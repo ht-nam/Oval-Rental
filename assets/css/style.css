@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    height: 80px;
+    background-color: rgb(182, 127, 65);
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    right: 0;
+    z-index: 1;
+}
+
+#header .main-title a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 100px 0 57px;
+    font-size: 30px;
+    color: #000;
+    font-weight: 1000;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+
+#order-list{
+    display: inline-block;
+    line-height: 80px;
+}
+
+.nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 57px;
+}
+
+.nav li a{
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0 0 3px 0;
+    text-align: center;
+}
+
+.nav li:hover a{
+    border-bottom: 3px solid #fa9e1b;
+}
+
+.search-button{
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-right: 57px;
+    line-height: 80px;
+}
+
+.search-button .nav-search{
+    color: #fff;
+}
+
+.search-button .nav-search:hover{
+    color: red;
+}
+
+#slider{
+    position: relative;
+    margin-top: 80px;
+    padding-top: 50%;
+    background: url('/assets/img/travel1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content{
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    color: #000;
+    width: 100%;
+}
+
+.text-content .text-heading{
+    font-size: 72px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 4px;
+    font-weight: 1000;
+}
+
+.text-content .text-subheading{
+    font-size: 60px;
+    font-family: Beyond;
+    font-weight: 1000;
+}

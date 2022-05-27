@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Beyond';
+    src: url('Beyond.eot');
+    src: url('Beyond.eot?#iefix') format('embedded-opentype'),
+        url('Beyond.woff2') format('woff2'),
+        url('Beyond.woff') format('woff'),
+        url('Beyond.ttf') format('truetype'),
+        url('Beyond.svg#Beyond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
