@@ -24,6 +24,13 @@
     .reserve-content .room-item img {
         width: 100%;
     }
+
+    .reserve-content .room-item .room-book {
+        bottom: 0px;
+        left: 32px;
+        width: calc(100% - 64px);
+        text-align: center;
+    }
 }
 
 /* tablet */

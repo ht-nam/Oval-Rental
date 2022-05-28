@@ -18,8 +18,8 @@ html {
     padding: 32px;
 }
 
-.mgt32 {
-    margin-top: 32px;
+.mgtb32 {
+    margin: 32px 0;
 }
 
 #header {
