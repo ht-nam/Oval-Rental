@@ -33,13 +33,51 @@
         </ul>
       </div>
       <!-- Ending a list -->
-      <!-- Begin: Search button -->
-      <div class="search-button">
-        <a href="">
-          <i class="nav-search fa-solid fa-magnifying-glass"></i>
+      <!-- Begin: login and register button -->
+      <ul class="login-button">
+        <a class="nav-login" href="">
+          <li>
+            Login
+          </li>
         </a>
+        <a class="nav-bracket" href="">
+          <li>
+            |
+          </li>
+        </a>
+        <a class="nav-register" href=""><li>
+          Register
+        </li></a>
       </div>
-      <!-- End: Search button -->
+      <!-- End: login and register button -->
+      <!-- Begin: side navigation -->
+      <div class="expand-side-nav">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Reservation</a>
+        </div>
+        <span class= "drawer" style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      >&#9776;
+    </span>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "350px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.7)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+      }
+      </script>
+      </div>
+      <!-- End: side navigation -->
+
     </div>
     <!-- End: header -->
 

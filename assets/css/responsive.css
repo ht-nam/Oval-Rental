@@ -9,6 +9,14 @@
         display: none;
     }
 
+    .login-button{
+        margin-right: 50px;
+    }
+
+    .expand-side-nav{
+        display: block;
+    }
+
     .text-content .text-heading {
         font-size: 30px;
     }
@@ -35,6 +43,12 @@
     .booking-section .col-12+.col-12 {
         padding-top: 32px;
     }
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 /* tablet */

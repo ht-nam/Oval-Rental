@@ -86,22 +86,86 @@ html {
     background-color: #fa9e1b;
 }
 
-.search-button {
-    float: right;
+.login-button{
     position: absolute;
     right: 0;
+    top: 0;
+    display: flex;
     line-height: 80px;
+    padding: 0 10px;
 }
 
-.search-button .nav-search {
-    color: #fff;
-    font-size: 24px;
-    padding: 28px;
+.login-button a{
+    text-decoration: none;
 }
 
-.search-button .nav-search:hover {
-    color: red;
+.login-button li{
+    color: #000;
+    font-size: 14px;
+    list-style-type: none;
+    font-weight: 700;
 }
+
+.login-button .nav-bracket{
+    margin: 0 5px;
+    cursor: default;
+}
+
+.login-button .nav-login li:hover{
+    color: orange;
+}
+
+.login-button .nav-register li:hover{
+    color: orange;
+}
+
+.expand-side-nav{
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    right: 0;
+    background-color: rgb(231, 185, 100);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.drawer {
+    position: fixed; 
+    top: 16px;
+    right: 15px;
+    z-index: 2;
+    float: right;
+    display: flex;
+}
+
+
 
 #banner {
     position: relative;
