@@ -31,6 +31,10 @@
         width: calc(100% - 64px);
         text-align: center;
     }
+
+    .booking-section .col-12+.col-12 {
+        padding-top: 32px;
+    }
 }
 
 /* tablet */

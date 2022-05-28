@@ -10,6 +10,14 @@ html {
     line-height: 1.5;
 }
 
+.pd12 {
+    padding: 12px;
+}
+
+.pd8 {
+    padding: 8px;
+}
+
 .pd16 {
     padding: 16px;
 }
@@ -18,8 +26,16 @@ html {
     padding: 32px;
 }
 
+.pdt32 {
+    padding-top: 32px;
+}
+
 .mgtb32 {
     margin: 32px 0;
+}
+
+.full-width {
+    width: 100%;
 }
 
 #header {
@@ -91,7 +107,7 @@ html {
     position: relative;
     margin-top: 80px;
     padding-top: 50%;
-    background: url('/Oval-Rental/assets/img/Banner/travel1.jpg') top center / cover no-repeat;
+    background: url('/assets/img/Banner/travel1.jpg') top center / cover no-repeat;
 }
 
 #banner .text-content {
@@ -155,6 +171,23 @@ html {
 .reserve-content .room-item .room-book:hover {
     opacity: 0.6;
 }
+
+.booking-section {
+    background-color: beige;
+    margin-top: 32px;
+}
+
+.booking-section .booking-form {
+    width: 800px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.booking-section .booking-form .form-btn {
+    background-color: #fa9e1b;
+    border: none;
+}
+
 
 /* Boostrap grid breakpoint:
     -xs (for phones - screens less than 768px wide)
