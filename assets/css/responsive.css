@@ -1,0 +1,49 @@
+/* mobile */
+@media (max-width: 739px) {
+    #header .main-title a {
+        margin: 0 20px;
+        font-size: 20px;
+    }
+
+    #order-list {
+        display: none;
+    }
+
+    .text-content .text-heading {
+        font-size: 30px;
+    }
+
+    .text-content .text-subheading {
+        font-size: 20px;
+    }
+
+    .reserve-content .room-item {
+        display: block;
+    }
+
+    .reserve-content .room-item img {
+        width: 100%;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #header .main-title a {
+        margin: 0 30px;
+    }
+
+    .text-content .text-heading {
+        font-size: 50px;
+    }
+
+    .text-content .text-subheading {
+        font-size: 40px;
+    }
+
+    .room-item .icon i {
+        font-size: 140%;
+        padding: 4px;
+    }
+
+
+}

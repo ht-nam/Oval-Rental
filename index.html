@@ -18,22 +18,27 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css">
   </head>
   <body>
     <div id="main">
       <!-- Begin: header -->
       <div id="header">
         <!--Begin: title -->
-        <div class="main-title"><a href="#">Oval rental</a></div>
+        <div class="main-title"><a href="index.html">Oval rental</a></div>
         <!-- End: title -->
         <!-- Begining a list -->
         <div id="order-list">
           <ul class="nav">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="pages/reserve.html">Offers</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="pages/reserve.html">Reserve a room</a></li>
           </ul>
         </div>
         <!-- Ending a list -->
@@ -46,8 +51,9 @@
         <!-- End: Search button -->
       </div>
       <!-- End: header -->
-      <!-- Begin: slider -->
-      <div id="slider">
+
+      <!-- Begin: banner -->
+      <div id="banner">
         <div class="text-content">
           <h1 class="text-heading">Discover</h1>
           <pre class="text-subheading">
@@ -58,14 +64,101 @@ Oval rental
           >
         </div>
       </div>
-    </div>
-      <!-- End: slider -->
+      <!-- End: banner -->
+
       <div id="content">
-        <div class="desc"></div>
-        <div class="offer"></div>
-        <div class="about-us"></div>
+        <div class="desc">
+          <div class="part-header pd32">
+            <p>Try the new experience now!</p>
+          </div>
+        </div>
+
+        <!-- Begin: Book section -->
+        <div class="reserve">
+          
+          <div class="part-header pd32">
+            <p>Our product</p>
+          </div>
+
+          <!-- Begin: Room list -->
+          <div class="reserve-content">
+            <div class="row">
+              <!-- Room item 1 -->
+              <div class="room-item col-12 col-lg-6 pd32">
+                <img src="assets/img/Room/vipRoom.jpg" alt="Vip Room">
+                <div class="room-desc pd16">
+                  <h5 class="room-desc-header">Vip Room</h5>
+                  <div class="room-desc-content">This is description. This is description. This is description. This is description.</div>
+                  <div class="icon mgt32">
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                    <i class="fa-solid fa-wind"></i>
+                  </div>
+                  <a href="pages/reserve.html" class="room-book pd16">Book now!</a>
+                </div>
+              </div>
+
+              <!-- Room item 2 -->
+              <div class="room-item col-12 col-lg-6 pd32">
+                <img src="assets/img/Room/doubleRoom.jpg" alt="Double Room">
+                <div class="room-desc pd16">
+                  <h5 class="room-desc-header">Double Room</h5>
+                  <div class="room-desc-content">This is description. This is description. This is description. This is description.</div>
+                  <div class="icon mgt32">
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-wind"></i>
+                  </div>
+                  <a href="pages/reserve.html" class="room-book pd16">Book now!</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Room item 3 -->
+              <div class="room-item col-12 col-lg-6 pd32">
+                <img  src="assets/img/Room/SingleRoom.jpg" alt="Single Room">
+                <div class="room-desc pd16">
+                  <h5 class="room-desc-header">Single Room</h5>
+                  <div class="room-desc-content">This is description. This is description. This is description. This is description.</div>
+                  <div class="icon mgt32">
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-wind"></i>
+                  </div>
+                  <a href="pages/reserve.html" class="room-book pd16">Book now!</a>
+                </div>
+              </div>
+
+              <!-- Room item 4 -->
+              <div class="room-item col-12 col-lg-6 pd32">
+                <img src="assets/img/Room/affordableRoom.jpg" alt="Affordable Room">
+                <div class="room-desc pd16">
+                  <h5 class="room-desc-header">Affordable Room</h5>
+                  <div class="room-desc-content">This is description. This is description. This is description. This is description.</div>
+                  <div class="icon mgt32">
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-wind"></i>
+                  </div>
+                  <a href="pages/reserve.html" class="room-book pd16">Book now!</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- End: Room list -->
+        </div>
+        <!-- End: Book section -->
+
+        <div class="about-us">
+          <div class="part-header pd32">
+            <p>About us</p>
+          </div>
+        </div>
       </div>
       <div id="footer"></div>
+      </div>
     </div>
   </body>
 </html>

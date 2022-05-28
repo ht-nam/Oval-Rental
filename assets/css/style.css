@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+.pd16 {
+    padding: 16px;
+}
+
+.pd32 {
+    padding: 32px;
+}
+
+.mgt32 {
+    margin-top: 32px;
+}
+
 #header {
     height: 80px;
     background-color: rgb(182, 127, 65);
@@ -19,7 +37,7 @@
 #header .main-title a {
     display: inline-block;
     text-decoration: none;
-    margin: 0 100px 0 57px;
+    margin: 0 57px;
     font-size: 30px;
     color: #000;
     font-weight: 1000;
@@ -35,49 +53,50 @@
 .nav li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 57px;
+    /* margin: 0 57px; */
 }
 
 .nav li a {
+    padding: 28px 28px;
     color: #000;
     font-weight: 800;
     text-transform: uppercase;
     font-size: 14px;
     text-decoration: none;
-    padding: 0 0 3px 0;
     text-align: center;
 }
 
-.nav li:hover a {
-    border-bottom: 3px solid #fa9e1b;
+.nav li:hover {
+    background-color: #fa9e1b;
 }
 
 .search-button {
     float: right;
     position: absolute;
     right: 0;
-    margin-right: 57px;
     line-height: 80px;
 }
 
 .search-button .nav-search {
     color: #fff;
+    font-size: 24px;
+    padding: 28px;
 }
 
 .search-button .nav-search:hover {
     color: red;
 }
 
-#slider {
+#banner {
     position: relative;
     margin-top: 80px;
     padding-top: 50%;
-    background: url('/assets/img/travel1.jpg') top center / cover no-repeat;
+    background: url('/assets/img/Banner/travel1.jpg') top center / cover no-repeat;
 }
 
-#slider .text-content {
+#banner .text-content {
     position: absolute;
-    top: 100px;
+    top: 15%;
     text-align: center;
     color: #000;
     width: 100%;
@@ -97,3 +116,49 @@
     font-family: Beyond;
     font-weight: 1000;
 }
+
+#content>div {
+    max-width: 90%;
+    margin: auto;
+}
+
+#content .part-header {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.reserve-content .room-item {
+    display: flex;
+    position: relative;
+}
+
+.reserve-content .room-item img {
+    width: 70%;
+}
+
+.reserve-content .room-item .room-book {
+    position: absolute;
+    bottom: 30px;
+    left: 70%;
+    text-decoration: none;
+    background-color: #fa9e1b;
+    color: #000;
+    font-weight: 600;
+}
+
+.room-item .icon i {
+    font-size: 140%;
+    padding: 8px;
+}
+
+.reserve-content .room-item .room-book:hover {
+    opacity: 0.6;
+}
+
+/* Boostrap grid breakpoint:
+    -xs (for phones - screens less than 768px wide)
+    -sm (for tablets - screens equal to or greater than 768px wide)
+    -md (for small laptops - screens equal to or greater than 992px wide)
+    -lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+*/
