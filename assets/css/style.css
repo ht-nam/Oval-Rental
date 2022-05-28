@@ -107,7 +107,7 @@ html {
     position: relative;
     margin-top: 80px;
     padding-top: 50%;
-    background: url('../img/Banner/travel1.jpg') top center / cover no-repeat;
+    background: url('../img/Banner/travel1.jpg') top center / cover no-repeat, url('/Oval-Rental/img/Banner/travel1.jpg') top center / cover no-repeat;
 }
 
 #banner .text-content {
