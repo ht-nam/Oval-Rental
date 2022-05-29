@@ -13,7 +13,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="..//assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+
+  <!-- Script -->
+  <script src="../assets/js/reserveScript.js"></script>
 </head>
 
 <body>
@@ -28,19 +31,64 @@
         <ul class="nav">
           <li><a href="../index.html">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Reserve a room</a></li>
+          <li><a href="#bk-st">Reserve a room</a></li>
         </ul>
       </div>
       <!-- Ending a list -->
-      <!-- Begin: Search button -->
-      <div class="search-button">
-        <a href="">
-          <i class="nav-search fa-solid fa-magnifying-glass"></i>
+
+      <!-- Begin: login and register button -->
+      <ul class="login-button">
+        <a class="nav-login" href="">
+          <li>
+            Login
+          </li>
         </a>
-      </div>
-      <!-- End: Search button -->
+        <a class="nav-bracket" href="">
+          <li>
+            |
+          </li>
+        </a>
+        <a class="nav-register" href="">
+          <li>
+            Register
+          </li>
+        </a>
+      </ul>
+
     </div>
     <!-- End: header -->
+
+    <!--Làm mờ phần dưới side-nav-->
+    <div id="transparent-modal">
+    </div>
+
+    <!-- Begin: side navigation -->
+    <div class="expand-side-nav">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#bk-st">Reservation</a>
+      </div>
+      <span class="drawer" style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;
+      </span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "350px";
+          document.getElementById("mySidenav").style.zIndex = "3";
+
+          document.getElementById("transparent-modal").classList.add("tpr-modal");
+
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("transparent-modal").classList.remove("tpr-modal");
+        }
+      </script>
+    </div>
+    <!-- End: side navigation -->
 
     <!-- Begin: banner -->
     <div id="banner">
@@ -79,7 +127,7 @@ Oval rental
                   <i class="fa-solid fa-champagne-glasses"></i>
                   <i class="fa-solid fa-wind"></i>
                 </div>
-                <a href="#" class="room-book pd16">Book now!</a>
+                <a href="#bk-st" id="vip-btn" class="room-book pd16">Book now!</a>
               </div>
             </div>
 
@@ -95,7 +143,7 @@ Oval rental
                   <i class="fa-solid fa-tv"></i>
                   <i class="fa-solid fa-wind"></i>
                 </div>
-                <a href="#" class="room-book pd16">Book now!</a>
+                <a href="#bk-st" id="double-btn" class="room-book pd16">Book now!</a>
               </div>
             </div>
           </div>
@@ -112,7 +160,7 @@ Oval rental
                   <i class="fa-solid fa-tv"></i>
                   <i class="fa-solid fa-wind"></i>
                 </div>
-                <a href="#" class="room-book pd16">Book now!</a>
+                <a href="#bk-st" id="single-btn" class="room-book pd16">Book now!</a>
               </div>
             </div>
 
@@ -128,7 +176,7 @@ Oval rental
                   <i class="fa-solid fa-tv"></i>
                   <i class="fa-solid fa-wind"></i>
                 </div>
-                <a href="#" class="room-book pd16">Book now!</a>
+                <a href="#bk-st" id="affordable-btn" class="room-book pd16">Book now!</a>
               </div>
             </div>
 
@@ -155,11 +203,11 @@ Oval rental
 
             <!-- row 2 -->
             <div class="row pd16">
-              <div class="col-12 col-md-5 col-lg-4">
-                <label for="quantity">Amount of people: </label>
-                <input class="pd12" type="number" id="quantity" name="quantity" min="1" max="5">
+              <div class="col-12 col-md-3 ">
+                <label for="quantity">Guests: </label>
+                <input class="pd12" type="number" id="quantity" name="quantity" min="1" max="5" placeholder="0">
               </div>
-              <div class="col-12 col-md-7 col-lg-8">
+              <div class="col-12 col-md-9">
                 <input class="full-width pd12" type="email" placeholder="Email">
               </div>
             </div>
@@ -169,16 +217,16 @@ Oval rental
                 <p>Room type:</p>
               </div>
               <div class="col-12 col-md-2 col-lg-2">
-                <input type="radio" name="room-Type" checked>VIP
+                <input type="radio" id="radio-vip" name="room-Type" value="vip" checked>VIP
               </div>
               <div class="col-12 col-md-2 col-lg-2">
-                <input type="radio" name="room-Type">Double
+                <input type="radio" id="radio-double" name="room-Type" value="double">Double
               </div>
               <div class="col-12 col-md-2 col-lg-2">
-                <input type="radio" name="room-Type">Single
+                <input type="radio" id="radio-single" name="room-Type" value="single">Single
               </div>
               <div class="col-12 col-md-3 col-lg-2">
-                <input type="radio" name="room-Type">Affordable
+                <input type="radio" id="radio-affordable" name="room-Type" value="affordable">Affordable
               </div>
             </div>
             <!-- row 4 -->

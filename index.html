@@ -18,6 +18,7 @@
 </head>
 
 <body>
+  <!-- Begin main -->
   <div id="main">
     <!-- Begin: header -->
     <div id="header">
@@ -45,41 +46,48 @@
             |
           </li>
         </a>
-        <a class="nav-register" href=""><li>
-          Register
-        </li></a>
-      </div>
+        <a class="nav-register" href="">
+          <li>
+            Register
+          </li>
+        </a>
+      </ul>
       <!-- End: login and register button -->
-      <!-- Begin: side navigation -->
-      <div class="expand-side-nav">
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Reservation</a>
-        </div>
-        <span class= "drawer" style="font-size: 30px; cursor: pointer" onclick="openNav()"
-      >&#9776;
-    </span>
-
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "350px";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.7)";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.body.style.backgroundColor = "white";
-      }
-      </script>
-      </div>
-      <!-- End: side navigation -->
-
     </div>
-    <!-- End: header -->
+    <!-- End:Header -->
+
+    <!--Làm mờ phần dưới side-nav-->
+    <div id="transparent-modal">
+    </div>
+
+    <!-- Begin: side navigation -->
+    <div class="expand-side-nav">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="pages/reserve.html#bk-st">Reservation</a>
+      </div>
+      <span class="drawer" style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;
+      </span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "350px";
+          document.getElementById("mySidenav").style.zIndex = "3";
+
+          document.getElementById("transparent-modal").classList.add("tpr-modal");
+
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("transparent-modal").classList.remove("tpr-modal");
+        }
+      </script>
+    </div>
+    <!-- End: side navigation -->
+
 
     <!-- Begin: banner -->
     <div id="banner">
@@ -94,6 +102,7 @@ Oval rental
     </div>
     <!-- End: banner -->
 
+    <!-- Begin:content -->
     <div id="content">
       <div class="desc">
         <div class="part-header pd32">
@@ -189,9 +198,13 @@ Oval rental
         </div>
       </div>
     </div>
-    <div id="footer"></div>
+    <!-- End:content -->
+
+    <div id="footer">
+    </div>
+
   </div>
-  </div>
+  <!-- End: main -->
 </body>
 
 </html>

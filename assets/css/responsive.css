@@ -1,4 +1,16 @@
-/* mobile */
+/* Super small devices */
+@media (max-width: 330px) {
+    #header .main-title a {
+        font-size: 15px !important;
+    }
+
+    .sidenav {
+        padding-top: 15px;
+    }
+
+}
+
+/* mobile and Super small devices*/
 @media (max-width: 739px) {
     #header .main-title a {
         margin: 0 20px;
@@ -9,11 +21,19 @@
         display: none;
     }
 
-    .login-button{
+    .tpr-modal {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+    }
+
+    .login-button {
         margin-right: 50px;
     }
 
-    .expand-side-nav{
+    .expand-side-nav {
         display: block;
     }
 
@@ -23,6 +43,10 @@
 
     .text-content .text-subheading {
         font-size: 20px;
+    }
+
+    .booking-section #quantity {
+        width: 100%;
     }
 
     .reserve-content .room-item {
@@ -43,13 +67,11 @@
     .booking-section .col-12+.col-12 {
         padding-top: 32px;
     }
+
 }
 
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
+
 
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
