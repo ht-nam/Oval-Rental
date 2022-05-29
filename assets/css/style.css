@@ -95,29 +95,34 @@ html {
     padding: 0 10px;
 }
 
-.login-button a{
+.nav-login, .nav-bracket, .nav-register{
+    list-style-type: none;
+}
+
+.login-button .nav-login a, .login-button .nav-bracket a, .login-button .nav-register a{
+    color: black;
+    font-weight: 700;
+    padding: 30px 0;
     text-decoration: none;
 }
 
-.login-button li{
-    color: #000;
-    font-size: 14px;
-    list-style-type: none;
-    font-weight: 700;
+.login-button .nav-bracket a{
+    cursor: default;
 }
 
 .login-button .nav-bracket{
     margin: 0 5px;
-    cursor: default;
 }
 
-.login-button .nav-login li:hover{
-    color: orange;
+.login-button .nav-login:hover a, .login-button .nav-register:hover a{
+    color: orangered;
 }
 
-.login-button .nav-register li:hover{
-    color: orange;
-}
+/* .login-button .nav-bracket{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+} */
 
 .expand-side-nav{
     display: none;
