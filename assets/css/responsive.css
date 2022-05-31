@@ -45,6 +45,19 @@
         font-size: 20px;
     }
 
+    .illustrate{
+        width: 50%;
+    }
+
+    .illustrate p{
+        text-align:left;
+    }
+
+    .embedded-map .map-frame{
+        width: 80%;
+        height: 300px;
+    }
+
     .booking-section #quantity {
         width: 100%;
     }
@@ -85,6 +98,11 @@
 
     .text-content .text-subheading {
         font-size: 40px;
+    }
+
+    .embedded-map .map-frame{
+        width: 600px;
+        height: 450px;
     }
 
     .room-item .icon i {
