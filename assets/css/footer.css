@@ -1,0 +1,131 @@
+#footer{
+    width: 100%;
+    background-color: #e1ddb5; 
+}
+
+#footer .col h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 43px;
+    margin-left: 15px;
+}
+.col{
+    margin-top: 40px;
+}
+.container-about-logo a{
+    margin-top: 27px;
+    font-size: 30px;
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.4;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+}
+.container-about-logo p{
+    margin: 0;
+    bottom: 0;
+    padding-left: 58px;
+    padding-bottom: 4px;
+}
+.container-about-text{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    line-height: 2;
+    margin-top: 26px;
+    padding-bottom: 14px;
+}
+.img-logo{
+    margin-left: 15px;
+    margin-right: 9px;
+    padding-bottom: 14px;
+    bottom: 0;
+    position: absolute;
+}
+
+.social-list a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 3rem;
+    margin-right: 12px;
+}
+.social-list a:hover{
+    background-color: rgb(223, 179, 97);
+    color: #fff;
+}
+
+.container-blog{
+    display: flex;
+    margin: 16px;
+    font-size: 16px;
+}
+.container-blog h4{
+    font-size: 16px;
+}
+.container-blog img{
+    width: 70px;
+    flex:30;
+}
+.container-blog-item{
+    flex:60;
+    margin-left: 10px;
+    font-size: 16px !important;
+    
+}
+.text-blog-item h4:hover{
+    font-size: 16px;
+    color: orange;
+    cursor: pointer;
+}
+.container-blog-item p{
+    font-size: 14px;
+}
+.container-tag ul{
+    position: relative;
+    top: 9px;
+    margin-left: -14px;
+    margin-top: 32px;
+}
+.container-tag ul li{
+    list-style-type: none ;
+    height: 35px;
+    display: inline-block;
+    margin-right: 9px;
+    margin-bottom: 9px;
+    border: solid 1px #000;
+}
+.container-tag a{ 
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    line-height: 33px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+.container-tag a:hover{
+    color:#fff;
+    background-color: rgb(223, 179, 97);
+}
+
+.container-contact-info span{
+    color: #000;
+    line-height: 2.14;
+    cursor: pointer;
+    margin-left: 6px;
+}
+.container-contact-info {
+    margin-left: 18px;
+    margin-top: 32px;
+}
+.container-contact-info span:hover{
+    color: orange;
+}
