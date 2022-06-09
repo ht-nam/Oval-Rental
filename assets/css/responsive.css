@@ -80,12 +80,7 @@
     .booking-section .col-12+.col-12 {
         padding-top: 32px;
     }
-
 }
-
-
-
-
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
     #header .main-title a {
