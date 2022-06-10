@@ -239,8 +239,36 @@ html {
     letter-spacing: 0.08rem;
 }
 
-#content .embedded-map{
+.desc .possession{
+    height: 50vh;
+    position: relative;
+}
+
+.desc .possession-img{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.desc .possession-img{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.desc .possession-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    top: 200px;
+    width: 100%;
+    position: absolute;
+}
+
+.desc .possession-text{
     text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0 0 2px #fff;
 }
 
 .reserve-content .room-item {

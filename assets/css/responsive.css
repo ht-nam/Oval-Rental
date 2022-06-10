@@ -54,7 +54,7 @@
     }
 
     .embedded-map .map-frame{
-        width: 80%;
+        width: 50%;
         height: 300px;
     }
 
@@ -98,11 +98,6 @@
 
     .text-content .text-subheading {
         font-size: 40px;
-    }
-
-    .embedded-map .map-frame{
-        width: 600px;
-        height: 450px;
     }
 
     .room-item .icon i {
