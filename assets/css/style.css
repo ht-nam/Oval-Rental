@@ -258,8 +258,8 @@ html {
 
 .desc .possession-container{
     background-color: rgba(0, 0, 0, 0.5);
-    height: 100px;
-    top: 200px;
+    height: 20vh;
+    bottom: 0;
     width: 100%;
     position: absolute;
 }
