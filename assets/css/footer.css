@@ -174,3 +174,27 @@
     color: orange;
 }
 /* end footer */
+
+@media (min-width: 1024px){
+    .container-about-us-content{
+        height: 34.1%;
+    }
+    .container-text>span{
+        font-size: 18px;
+    }
+    .container-text p{
+        font-size: 10px;
+    }
+}
+
+/* responsive chưa song :(( */
+@media (min-width: 740px) and (max-width: 1023px){
+    .row{
+        display: block;
+    }
+}
+@media (max-width: 740px){
+    .row{
+        display: block;
+    }
+}
