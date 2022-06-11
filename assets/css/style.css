@@ -240,7 +240,7 @@ html {
 }
 
 .desc .possession{
-    height: 50vh;
+    height: 75vh;
     position: relative;
 }
 
@@ -251,24 +251,55 @@ html {
 }
 
 .desc .possession-img{
+    display: inline-block;
     height: 50vh;
     width: 100%;
     position: relative;
 }
 
 .desc .possession-container{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
     height: 20vh;
     bottom: 0;
     width: 100%;
     position: absolute;
 }
 
+.desc .possession-subtitle{
+    color: #000;
+    text-align: start;
+    margin: 10px 10px 0 10px;
+}
+
+
 .desc .possession-text{
     text-align: center;
-    color: #fff;
-    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    position: absolute;
+    font-weight: bold;
+    bottom: 140px;
+    left: 10px;
+    color: rgb(43, 41, 41);
+    margin: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
     text-shadow: 0 0 2px #fff;
+}
+
+.possession-list .possession-button{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: Arial,Helvetica,sans-serif;
+    margin-left: 10px;
+    color: #000;
+    text-decoration: none;
+    bottom: 0;
+}
+
+.possession-list .possession-button:hover{
+    text-decoration: underline;
 }
 
 .reserve-content .room-item {

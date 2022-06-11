@@ -3,10 +3,13 @@
     #header .main-title a {
         font-size: 15px !important;
     }
-    .possession-item{
+    .possession-list .possession-item{
         margin-bottom: 10px;
     }
-
+    .possession-list .possession-text{
+        position:sticky;
+        font-size: 5px;
+    }
     .sidenav {
         padding-top: 15px;
     }
@@ -26,6 +29,20 @@
 
     .possession-item{
         margin-bottom: 32px;
+    }
+
+    .possession-list .possession-text{
+        position:sticky;
+        font-size: 20px;
+    }
+
+    .possession-list .possession-subtitle{
+        position:sticky;
+        font-size: 13px;
+    }
+
+    .possession-list .possession-button{
+        font-size: 13px;
     }
 
     .tpr-modal {
@@ -89,7 +106,7 @@
     }
 }
 /* tablet */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 740px) and (max-width: 1024px) {
     #header .main-title a {
         margin: 0 30px;
     }
@@ -99,6 +116,20 @@
     }
     .possession-item{
         margin-bottom: 32px;
+    }
+
+    .possession-list .possession-text{
+        position:sticky;
+        font-size: 15px;    
+    }
+
+    .possession-list .possession-subtitle{
+        position:sticky;
+        font-size: 13px;
+    }
+
+    .possession-list .possession-button{
+        font-size: 13px;
     }
 
     .text-content .text-subheading {
