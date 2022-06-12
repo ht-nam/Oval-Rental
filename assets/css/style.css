@@ -34,6 +34,10 @@ html {
     margin: 32px 0;
 }
 
+.half-width {
+    width: 50%;
+}
+
 .full-width {
     width: 100%;
 }
@@ -86,13 +90,13 @@ html {
     background-color: #fa9e1b;
 }
 
-.login-button {
+#lgBtn {
     position: absolute;
     right: 0;
     top: 0;
-    display: flex;
     line-height: 80px;
     padding: 0 10px;
+    cursor: pointer;
 }
 
 .nav-login,
@@ -101,25 +105,14 @@ html {
     list-style-type: none;
 }
 
-.login-button .nav-login a,
-.login-button .nav-bracket a,
-.login-button .nav-register a {
+#lgBtn p {
     color: black;
     font-weight: 700;
-    padding: 30px 0;
+    font-size: 16px;
     text-decoration: none;
 }
 
-.login-button .nav-bracket a {
-    cursor: default;
-}
-
-.login-button .nav-bracket {
-    margin: 0 5px;
-}
-
-.login-button .nav-login:hover a,
-.login-button .nav-register:hover a {
+#lgBtn p:hover {
     color: orangered;
 }
 
@@ -220,44 +213,44 @@ html {
     text-align: center;
 }
 
-.part-header p{
+.part-header p {
     text-transform: uppercase;
     letter-spacing: .3125rem;
     font-size: 2rem;
 }
 
-.illustrate{
+.illustrate {
     width: 50%;
     transform: translateX(50%);
     margin-bottom: 48px;
 }
 
 
-#content .illustrate p{
+#content .illustrate p {
     text-align: center;
     line-height: 1.66;
     letter-spacing: 0.08rem;
 }
 
-.desc .possession{
+.desc .possession {
     height: 75vh;
     position: relative;
 }
 
-.desc .possession-img{
+.desc .possession-img {
     height: 50vh;
     width: 100%;
     position: relative;
 }
 
-.desc .possession-img{
+.desc .possession-img {
     display: inline-block;
     height: 50vh;
     width: 100%;
     position: relative;
 }
 
-.desc .possession-container{
+.desc .possession-container {
     background-color: #fff;
     height: 20vh;
     bottom: 0;
@@ -265,14 +258,14 @@ html {
     position: absolute;
 }
 
-.desc .possession-subtitle{
+.desc .possession-subtitle {
     color: #000;
     text-align: start;
     margin: 10px 10px 0 10px;
 }
 
 
-.desc .possession-text{
+.desc .possession-text {
     text-align: center;
     letter-spacing: 2px;
     font-weight: 200;
@@ -288,17 +281,17 @@ html {
     text-shadow: 0 0 2px #fff;
 }
 
-.possession-list .possession-button{
+.possession-list .possession-button {
     position: absolute;
     text-transform: uppercase;
-    font-size: Arial,Helvetica,sans-serif;
+    font-size: Arial, Helvetica, sans-serif;
     margin-left: 10px;
     color: #000;
     text-decoration: none;
     bottom: 0;
 }
 
-.possession-list .possession-button:hover{
+.possession-list .possession-button:hover {
     text-decoration: underline;
 }
 
@@ -338,7 +331,6 @@ html {
 
 .booking-section {
     background-color: beige;
-    margin-top: 32px;
 }
 
 .booking-section .booking-form {
@@ -352,8 +344,75 @@ html {
     border: none;
 }
 
+#modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
 
-/* Boostrap grid breakpoint:
+#modal .modal-login {
+    width: 900px;
+    max-width: 90%;
+    border-radius: 100px;
+    /* display: none; */
+}
+
+#modal .modal-hd {
+    background: linear-gradient(#3f87a6, #ebf8e1);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#modal .modal-ct {
+    margin: 0;
+    padding: 16px 32px;
+    background-color: #ebf8e1;
+}
+
+#modal .modal-ft {
+    height: 80px;
+    background: linear-gradient(#ebf8e1, #f69d3c);
+}
+
+#modal a:first-child {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#modal a:last-child {
+    display: block;
+    float: left;
+    text-align: right;
+}
+
+#modal .modal-register {
+    width: 900px;
+    max-width: 90%;
+    border-radius: 100px;
+    display: none;
+}
+
+#modal i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+}
+
+#modal i:hover {
+    background-color: red;
+}
+
+/* Bootstrap grid breakpoint:
     -xs (for phones - screens less than 768px wide)
     -sm (for tablets - screens equal to or greater than 768px wide)
     -md (for small laptops - screens equal to or greater than 992px wide)
