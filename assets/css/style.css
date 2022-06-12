@@ -320,9 +320,8 @@ html {
 }
 
 .room-item .icon i {
-    /* float: left; */
     font-size: 140%;
-    padding: 8px;
+    padding: 4px;
 }
 
 .reserve-content .room-item .room-book:hover {
