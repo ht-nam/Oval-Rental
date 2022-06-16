@@ -188,13 +188,11 @@
 }
 
 /* responsive chưa song :(( */
-@media (min-width: 740px) and (max-width: 1023px){
+@media (max-width: 1023px){
     .row{
         display: block;
     }
-}
-@media (max-width: 740px){
-    .row{
-        display: block;
+    .container-about-us-item img {
+        width: 100%;
     }
 }
