@@ -232,7 +232,7 @@ html {
     letter-spacing: 0.08rem;
 }
 
-.desc .possession-list{
+.desc .possession-list {
     margin: 40px 0;
 }
 
@@ -355,8 +355,15 @@ html {
 #modal .modal-login {
     width: 900px;
     max-width: 90%;
-    border-radius: 100px;
     /* display: none; */
+    animation: modal-slide-in ease-in 0.5s;
+}
+
+#modal .modal-register {
+    width: 900px;
+    max-width: 90%;
+    display: none;
+    animation: modal-slide-in ease-in 0.5s;
 }
 
 #modal .modal-hd {
@@ -377,23 +384,16 @@ html {
     background: linear-gradient(#ebf8e1, #f69d3c);
 }
 
-#modal a:first-child {
+#modal .modal-ft div:first-child {
     display: block;
     float: left;
     text-align: left;
 }
 
-#modal a:last-child {
+#modal .modal-ft div:last-child {
     display: block;
     float: left;
     text-align: right;
-}
-
-#modal .modal-register {
-    width: 900px;
-    max-width: 90%;
-    border-radius: 100px;
-    display: none;
 }
 
 #modal i {
@@ -405,6 +405,34 @@ html {
 
 #modal i:hover {
     background-color: red;
+}
+
+.modal-slide-out {
+    animation: modal-slide-out ease-out 0.5s !important;
+}
+
+@keyframes modal-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes modal-slide-out {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
 }
 
 /* Bootstrap grid breakpoint:
