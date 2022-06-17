@@ -45,7 +45,7 @@
 /* footer */
 #footer{
     width: 100%;
-    background-color: #e1ddb5; 
+    background-color: #e1ddb5 !important; 
 }
 #footer .col h2{
     font-size: 18px;
@@ -172,9 +172,12 @@
 }
 .container-contact-info span:hover{
     color: orange;
+
 }
+
 /* end footer */
 
+/* responsive about-us */
 @media (min-width: 1024px){
     .container-about-us-content{
         height: 34.1%;
@@ -185,14 +188,43 @@
     .container-text p{
         font-size: 10px;
     }
+    
 }
-
-/* responsive chưa song :(( */
-@media (max-width: 1023px){
+@media (min-width:720px) and (max-width: 1023px){
     .row{
         display: block;
     }
     .container-about-us-item img {
         width: 100%;
     }
+    .rps_footer{
+        display: flex;
+    }
 }
+@media (max-width:719px)
+{
+    .row{
+        display: block ;
+    }
+    .container-about-us-item img {
+        width: 100%;
+    }
+    .container-text>span{
+        font-size: 14px;
+    }
+    .container-text p{
+        font-size: 12px;
+    }
+    .container-text {
+        padding-left: 30px;
+    }
+    .rps_footer{
+        display: flex;
+    }
+    .social-list a{
+        font-size: 7px;
+    }
+}
+
+
+
