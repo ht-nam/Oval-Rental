@@ -81,7 +81,7 @@
     font-weight: 600;
     color: #000;
     line-height: 2;
-    margin-top: 26px;
+    padding-top: 26px;
     padding-bottom: 14px;
 }
 .img-logo{
@@ -104,7 +104,9 @@
     background-color: rgb(223, 179, 97);
     color: #fff;
 }
-
+.column-blog{
+    padding-top: 26px;
+}
 .container-blog{
     display: flex;
     margin: 16px;
@@ -186,7 +188,7 @@
         font-size: 18px;
     }
     .container-text p{
-        font-size: 10px;
+        font-size: 14px;
     }
     
 }
@@ -206,23 +208,33 @@
     .row{
         display: block ;
     }
+
+    .container-about-logo {
+        padding-top: 16px;
+    }
+
     .container-about-us-item img {
         width: 100%;
     }
+
     .container-text>span{
         font-size: 14px;
     }
+
     .container-text p{
         font-size: 12px;
     }
+
     .container-text {
         padding-left: 30px;
     }
-    .rps_footer{
-        display: flex;
-    }
+
     .social-list a{
-        font-size: 7px;
+        font-size: 20px;
+    }
+
+    .container-tag{
+        font-size: 30px;
     }
 }
 
