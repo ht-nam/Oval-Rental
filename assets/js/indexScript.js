@@ -1,6 +1,39 @@
 window.onload = start;
 
 function start() {
+    modalConFig();
+}
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "55%";
+    document.getElementById("mySidenav").style.zIndex = "3";
+
+    document.getElementById("transparent-modal").classList.add("tpr-modal");
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("transparent-modal").classList.remove("tpr-modal");
+}
+
+function closeModal() {
+    document.querySelector(".modal-login").classList.add("modal-slide-out");
+    document.querySelector(".modal-register").classList.add("modal-slide-out");
+     
+    setTimeout(function () {
+        document.querySelector(".modal-login").classList.remove("modal-slide-out");
+        document.querySelector(".modal-register").classList.remove("modal-slide-out");
+        modal.style.display = "none";
+
+        //Show login instead of register modal after close register modal
+        document.querySelector(".modal-login").style.display = "block";
+        document.querySelector(".modal-register").style.display = "none";
+    }, 400
+    )
+}
+
+export function modalConFig() {
     const modal = document.getElementById("modal");
     const loginBtn = document.getElementById("lgBtn");
     const rgChangeBtn = document.getElementById("rgChange");
@@ -40,33 +73,4 @@ function start() {
     document.querySelector(".modal-register").onclick = function (event) {
         event.stopPropagation();
     }
-}
-
-
-function openNav() {
-    document.getElementById("mySidenav").style.width = "55%";
-    document.getElementById("mySidenav").style.zIndex = "3";
-
-    document.getElementById("transparent-modal").classList.add("tpr-modal");
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("transparent-modal").classList.remove("tpr-modal");
-}
-
-function closeModal() {
-    document.querySelector(".modal-login").classList.add("modal-slide-out");
-    document.querySelector(".modal-register").classList.add("modal-slide-out");
-     
-    setTimeout(function () {
-        document.querySelector(".modal-login").classList.remove("modal-slide-out");
-        document.querySelector(".modal-register").classList.remove("modal-slide-out");
-        modal.style.display = "none";
-
-        //Show login instead of register modal after close register modal
-        document.querySelector(".modal-login").style.display = "block";
-        document.querySelector(".modal-register").style.display = "none";
-    }, 400
-    )
 }
