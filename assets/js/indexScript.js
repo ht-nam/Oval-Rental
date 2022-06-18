@@ -1,18 +1,23 @@
 window.onload = start;
 
 function start() {
+    sideNavConfig();
     modalConFig();
 }
 
+export function sideNavConfig() {
+    document.querySelector(".drawer").onclick = openNav;
+    document.querySelector(".closebtn").onclick = closeNav;
+}
 
-function openNav() {
+export function openNav() {
     document.getElementById("mySidenav").style.width = "55%";
     document.getElementById("mySidenav").style.zIndex = "3";
 
     document.getElementById("transparent-modal").classList.add("tpr-modal");
 }
 
-function closeNav() {
+export function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("transparent-modal").classList.remove("tpr-modal");
 }

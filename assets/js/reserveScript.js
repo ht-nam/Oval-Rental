@@ -1,17 +1,18 @@
-import {modalConFig} from "./indexScript.js";
-
+import {modalConFig, sideNavConfig} from "./indexScript.js";
 
 window.onload = start;
 function start() {
+    sideNavConfig();
     modalConFig();
+    formConfig();
+}
 
-    // form param
+function formConfig() {
     const vipBtn = document.getElementById("vip-btn");
     const doubleBtn = document.getElementById("double-btn");
     const singleBtn = document.getElementById("single-btn");
     const affordableBtn = document.getElementById("affordable-btn");
 
-    // form func
     vipBtn.onclick = function () {
         const d = document.getElementById("radio-vip");
         d.checked = true;
