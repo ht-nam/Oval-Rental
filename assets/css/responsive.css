@@ -119,24 +119,6 @@
         font-size: 50px;
     }
 
-    .possession-item {
-        margin-bottom: 32px;
-    }
-
-    .possession-list .possession-text {
-        position: sticky;
-        font-size: 15px;
-    }
-
-    .possession-list .possession-subtitle {
-        position: sticky;
-        font-size: 13px;
-    }
-
-    .possession-list .possession-button {
-        font-size: 13px;
-    }
-
     .text-content .text-subheading {
         font-size: 40px;
     }

@@ -1,284 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oval Rental</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/favicon/icons8-hotel-star-64.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oval Rental</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon/icons8-hotel-star-64.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/responsive.css" />
-  <link rel="stylesheet" href="assets/css/footer.css" />
-</head>
-
-<body>
-  <!-- Begin main -->
-  <div id="main">
-    <!-- Begin: header -->
-    <div id="header">
-      <!--Begin: title -->
-      <div class="main-title"><a href="index.html">Oval rental</a></div>
-      <!-- End: title -->
-      <!-- Begining a list -->
-      <div id="order-list">
-        <ul class="nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#aboutUs">About</a></li>
-          <li><a href="pages/reserve.html#bk-st">Reservation</a></li>
-        </ul>
+  <body>
+    <!-- Begin main -->
+    <div id="main">
+      <!-- Begin: header -->
+      <div id="header">
+        <!--Begin: title -->
+        <div class="main-title"><a href="index.html">Oval rental</a></div>
+        <!-- End: title -->
+        <!-- Begining a list -->
+        <div id="order-list">
+          <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutUs">About</a></li>
+            <li><a href="pages/reserve.html#bk-st">Reservation</a></li>
+          </ul>
+        </div>
+        <!-- Ending a list -->
+        <!-- Begin: login and register button -->
+        <div id="lgBtn">
+          <p>Login | Register</p>
+        </div>
+        <!-- End: login and register button -->
       </div>
-      <!-- Ending a list -->
-      <!-- Begin: login and register button -->
-      <div id="lgBtn">
-        <p>Login | Register</p>
+      <!-- End:Header -->
+
+      <!--Làm mờ phần dưới side-nav-->
+      <div id="transparent-modal"></div>
+
+      <!-- Begin: side navigation -->
+      <div class="expand-side-nav">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="#aboutUs">About</a>
+          <a href="pages/reserve.html#bk-st">Reservation</a>
+        </div>
+        <span class="drawer" style="font-size: 30px; cursor: pointer"
+          >&#9776;
+        </span>
       </div>
-      <!-- End: login and register button -->
-    </div>
-    <!-- End:Header -->
+      <!-- End: side navigation -->
 
-    <!--Làm mờ phần dưới side-nav-->
-    <div id="transparent-modal"></div>
-
-    <!-- Begin: side navigation -->
-    <div class="expand-side-nav">
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="#aboutUs">About</a>
-        <a href="pages/reserve.html#bk-st">Reservation</a>
-      </div>
-      <span class="drawer" style="font-size: 30px; cursor: pointer">&#9776;
-      </span>
-    </div>
-    <!-- End: side navigation -->
-
-    <!-- Begin: banner -->
-    <div id="banner">
-      <div class="text-content">
-        <h1 class="text-heading">Discover</h1>
-        <pre class="text-subheading">
+      <!-- Begin: banner -->
+      <div id="banner">
+        <div class="text-content">
+          <h1 class="text-heading">Discover</h1>
+          <pre class="text-subheading">
 the world
 with
 Oval rental
-        </pre>
+        </pre
+          >
+        </div>
       </div>
-    </div>
-    <!-- End: banner -->
-    <!-- Begin:content -->
-    <div id="content">
-      <div class="desc">
-        <div class="part-header pd32">
-          <p>New experience now!</p>
-        </div>
-        <div class="illustrate">
-          <p>
-            Oval Rental hotel is located right in the heart of Hanoi - A
-            thousand-year-old city with various outstanding structures and
-            signature cuisine. Visiting this hotel, visitors could experience
-            our top-tier services, enjoying fresh air around Hoan Kiem lake,
-            as well as being immersed in the tranquil atmosphere of the mossy
-            old town.
-          </p>
-        </div>
-        <!-- Begin: possession-list -->
-        <div class="possession-list row">
-          <div class="possession-item col-lg-4 col-12">
-            <div class="possession">
-              <img src="./assets/img/Experience_img/beautiful_view.jpg" alt="" class="possession-img" />
-              <div class="possession-container">
-                <p class="possession-text">If you love us,vote for us</p>
-                <p class="possession-subtitle">
-                  If you love us, please take a moment to vote for us in the
-                  Hotels & Resorts and Your Year in Travel categories.
-                </p>
-                <a href="" class="possession-button">Vote for us</a>
+      <!-- End: banner -->
+      <!-- Begin:content -->
+      <div id="content">
+        <div class="desc">
+          <div class="part-header pd32">
+            <p>New experience now!</p>
+          </div>
+          <div class="illustrate">
+            <p>
+              Oval Rental hotel is located right in the heart of Hanoi - A
+              thousand-year-old city with various outstanding structures and
+              signature cuisine. Visiting this hotel, visitors could experience
+              our top-tier services, enjoying fresh air around Hoan Kiem lake,
+              as well as being immersed in the tranquil atmosphere of the mossy
+              old town.
+            </p>
+          </div>
+          <!-- Begin: possession-list -->
+          <div class="possession-list row">
+            <div class="possession-item col-lg-4 col-12">
+              <div class="possession">
+                <img
+                  src="./assets/img/Experience_img/beautiful_view.jpg"
+                  alt=""
+                  class="possession-img"
+                />
+                <div class="possession-container">
+                  <p class="possession-text">If you love us,vote for us</p>
+                  <p class="possession-subtitle">
+                    If you love us, please take a moment to vote for us in the
+                    Hotels & Resorts and Your Year in Travel categories.
+                  </p>
+                  <a href="" class="possession-button">Vote for us</a>
+                </div>
+              </div>
+            </div>
+            <div class="possession-item col-lg-4 col-12">
+              <div class="possession">
+                <img
+                  src="./assets/img/Experience_img/beautiful_view1.png"
+                  alt=""
+                  class="possession-img"
+                />
+                <div class="possession-container">
+                  <p class="possession-text">Travel with ease</p>
+                  <p class="possession-subtitle">
+                    We are pleased to offer PCR testing in the privacy of our
+                    resort, administered by local health professionals.
+                  </p>
+                  <a href="" class="possession-button">Discover more</a>
+                </div>
+              </div>
+            </div>
+            <div class="possession-item col-lg-4 col-12">
+              <div class="possession">
+                <img
+                  src="./assets/img/Experience_img/Wine.jpg"
+                  alt=""
+                  class="possession-img"
+                />
+                <div class="possession-container">
+                  <p class="possession-text">Wine experience</p>
+                  <p class="possession-subtitle" style="margin-bottom: 43px">
+                    Discover our signature wine experiences in the Cape
+                    Winelands.
+                  </p>
+                  <a href="" class="possession-button">Discover more</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="possession-item col-lg-4 col-12">
-            <div class="possession">
-              <img src="./assets/img/Experience_img/beautiful_view1.png" alt="" class="possession-img" />
-              <div class="possession-container">
-                <p class="possession-text">Travel with ease</p>
-                <p class="possession-subtitle">
-                  We are pleased to offer PCR testing in the privacy of our
-                  resort, administered by local health professionals.
-                </p>
-                <a href="" class="possession-button">Discover more</a>
-              </div>
-            </div>
-          </div>
-          <div class="possession-item col-lg-4 col-12">
-            <div class="possession">
-              <img src="./assets/img/Experience_img/Wine.jpg" alt="" class="possession-img" />
-              <div class="possession-container">
-                <p class="possession-text">Wine experience</p>
-                <p class="possession-subtitle" style="margin-bottom: 43px">
-                  Discover our signature wine experiences in the Cape
-                  Winelands.
-                </p>
-                <a href="" class="possession-button">Discover more</a>
-              </div>
-            </div>
-          </div>
+          <!-- End: possession-list -->
         </div>
-        <!-- End: possession-list -->
-      </div>
 
-      <!-- Begin: Book section -->
-      <div class="reserve">
-        <div class="part-header pd32">
-          <p>ROOMS & SUITES</p>
-        </div>
-        <div class="illustrate">
-          <p>
-            Spread over two interconnected buildings, Oval Rentals offers 30
-            double, and 5 single rooms as well as 36 suites and junior suites.
-            Families can enjoy some privacy thanks to interconnecting rooms or
-            in our generous Family Suite with the view of Hoan Kiem Lake on
-            the top floor. Since our last renovation in 2018, all of our rooms
-            feature elegant wooden parquet flooring. From the balconies,
-            visitors can admire the hustle and bustle of Hanoi, which is often
-            seen in this place. All of our accommodation options comprise
-            luxury amenities such as tea & coffee makers, minibars, flat
-            screen televisions, fluffy bathrobes and slippers, hair dryers,
-            and exclusive Pure Altitude toiletries.
-          </p>
-        </div>
-        <!-- Begin: Room list -->
-        <div class="reserve-content">
-          <div class="row">
-            <!-- Room item 1 -->
-            <div class="room-item col-12 col-lg-6 pd32">
-              <img src="assets/img/Room/vipRoom.jpg" alt="Vip Room" />
-              <div class="room-desc pd16">
-                <h5 class="room-desc-header">Vip Room</h5>
-                <div class="room-desc-content">
-                  This is description. This is description. This is
-                  description. This is description.
-                </div>
-                <div class="icon mgtb32">
-                  <i class="fa-solid fa-wifi"></i>
-                  <i class="fa-solid fa-tv"></i>
-                  <i class="fa-solid fa-champagne-glasses"></i>
-                  <i class="fa-solid fa-wind"></i>
-                </div>
-                <a href="pages/reserve.html#bk-st" class="room-book pd16">Learn more</a>
-              </div>
-            </div>
-
-            <!-- Room item 2 -->
-            <div class="room-item col-12 col-lg-6 pd32">
-              <img src="assets/img/Room/doubleRoom.jpg" alt="Double Room" />
-              <div class="room-desc pd16">
-                <h5 class="room-desc-header">Double Room</h5>
-                <div class="room-desc-content">
-                  This is description. This is description. This is
-                  description. This is description.
-                </div>
-                <div class="icon mgtb32">
-                  <i class="fa-solid fa-wifi"></i>
-                  <i class="fa-solid fa-tv"></i>
-                  <i class="fa-solid fa-wind"></i>
-                </div>
-                <a href="pages/reserve.html#bk-st" class="room-book pd16">Learn more</a>
-              </div>
-            </div>
+        <!-- Begin: Book section -->
+        <div class="reserve">
+          <div class="part-header pd32">
+            <p>ROOMS & SUITES</p>
           </div>
-          <div class="row">
-            <!-- Room item 3 -->
-            <div class="room-item col-12 col-lg-6 pd32">
-              <img src="assets/img/Room/SingleRoom.jpg" alt="Single Room" />
-              <div class="room-desc pd16">
-                <h5 class="room-desc-header">Single Room</h5>
-                <div class="room-desc-content">
-                  This is description. This is description. This is
-                  description. This is description.
-                </div>
-                <div class="icon mgtb32">
-                  <i class="fa-solid fa-wifi"></i>
-                  <i class="fa-solid fa-tv"></i>
-                  <i class="fa-solid fa-wind"></i>
-                </div>
-                <a href="pages/reserve.html#bk-st" class="room-book pd16">Learn more</a>
-              </div>
-            </div>
-
-            <!-- Room item 4 -->
-            <div class="room-item col-12 col-lg-6 pd32">
-              <img src="assets/img/Room/affordableRoom.jpg" alt="Affordable Room" />
-              <div class="room-desc pd16">
-                <h5 class="room-desc-header">Affordable Room</h5>
-                <div class="room-desc-content">
-                  This is description. This is description. This is
-                  description. This is description.
-                </div>
-                <div class="icon mgtb32">
-                  <i class="fa-solid fa-wifi"></i>
-                  <i class="fa-solid fa-tv"></i>
-                  <i class="fa-solid fa-wind"></i>
-                </div>
-                <a href="pages/reserve.html#bk-st" class="room-book pd16">Learn more</a>
-              </div>
-            </div>
+          <div class="illustrate">
+            <p>
+              Spread over two interconnected buildings, Oval Rentals offers 30
+              double, and 5 single rooms as well as 36 suites and junior suites.
+              Families can enjoy some privacy thanks to interconnecting rooms or
+              in our generous Family Suite with the view of Hoan Kiem Lake on
+              the top floor. Since our last renovation in 2018, all of our rooms
+              feature elegant wooden parquet flooring. From the balconies,
+              visitors can admire the hustle and bustle of Hanoi, which is often
+              seen in this place. All of our accommodation options comprise
+              luxury amenities such as tea & coffee makers, minibars, flat
+              screen televisions, fluffy bathrobes and slippers, hair dryers,
+              and exclusive Pure Altitude toiletries.
+            </p>
           </div>
-        </div>
-        <!-- End: Room list -->
-      </div>
-      <!-- End: Book section -->
-
-      <div id="aboutUs" class="about-us">
-        <div class="part-header pd32">
-          <p>About us</p>
-          <div class="container">
+          <!-- Begin: Room list -->
+          <div class="reserve-content">
             <div class="row">
-              <div class="col">
-                <div class="container-about-us-item">
-                  <img src="assets/img/Room/vipRoom.jpg" alt="" />
-                  <div class="container-about-us-content">
-                    <div class="container-text">
-                      <span>" The best room ever "</span>
-                      <p>
-                        Nullam eu convallis tortor. Suspendisse potenti. In
-                        faucibus massa arcu, vitae cursus mi hendrerit nec.
-                      </p>
+              <!-- Room item 1 -->
+              <div class="room-item col-12 col-lg-6 pd32">
+                <img src="assets/img/Room/vipRoom.jpg" alt="Vip Room" />
+                <div class="room-desc pd16">
+                  <h5 class="room-desc-header">Vip Room</h5>
+                  <div class="room-desc-content col-12 col-lg-12">
+                    <p class="description">
+                      <b style="text-transform: uppercase">View:</b> Waterfront
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Size:</b> 63 sqm/678
+                      sqft
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Occupancy:</b>
+                      Sleeps 3
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Bedding:</b>1 King
+                      Bed
+                    </p>
+                  </div>
+                  <div class="icon mgtb32">
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                    <i class="fa-solid fa-wind"></i>
+                  </div>
+                  <a href="pages/reserve.html#bk-st" class="room-book pd16"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+
+              <!-- Room item 2 -->
+              <div class="room-item col-12 col-lg-6 pd32">
+                <img src="assets/img/Room/doubleRoom.jpg" alt="Double Room" />
+                <div class="room-desc pd16">
+                  <h5 class="room-desc-header">Double Room</h5>
+                  <div class="room-desc-content col-12 col-lg-12">
+                    <p class="description">
+                      <b style="text-transform: uppercase">View:</b> Waterfront
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Size:</b> 63 sqm/678
+                      sqft
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Occupancy:</b> Sleeps
+                      4
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Bedding:</b> 2 Queen
+                      Beds
+                    </p>
+                  </div>
+                  <div class="icon mgtb32">
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-wind"></i>
+                  </div>
+                  <a href="pages/reserve.html#bk-st" class="room-book pd16"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Room item 3 -->
+              <div class="room-item col-12 col-lg-6 pd32">
+                <img src="assets/img/Room/SingleRoom.jpg" alt="Single Room" />
+                <div class="room-desc pd16">
+                  <h5 class="room-desc-header">Single Room</h5>
+                  <div class="room-desc-content col-12 col-lg-12">
+                    <p class="description">
+                      <b style="text-transform: uppercase">View:</b> City
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Size:</b> 63 sqm/248
+                      sqft
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Occupancy:</b>
+                      Sleeps 1
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Bedding:</b> 1 Single
+                      Bed
+                    </p>
+                  </div>
+                  <div class="icon mgtb32">
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-wind"></i>
+                  </div>
+                  <a href="pages/reserve.html#bk-st" class="room-book pd16"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+
+              <!-- Room item 4 -->
+              <div class="room-item col-12 col-lg-6 pd32">
+                <img
+                  src="assets/img/Room/affordableRoom.jpg"
+                  alt="Affordable Room"
+                />
+                <div class="room-desc pd16">
+                  <h5 class="room-desc-header">Affordable Room</h5>
+                  <div class="room-desc-content col-12 col-lg-12">
+                    <p class="description">
+                      <b style="text-transform: uppercase">View:</b> Mountain
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Size:</b> 63 sqm/678
+                      sqft
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Occupancy:</b>
+                      Sleeps 2
+                    </p>
+                    <p class="description">
+                      <b style="text-transform: uppercase">Bedding:</b>1 Queen
+                      Bed
+                    </p>
+                  </div>
+                  <div class="icon mgtb32">
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-wind"></i>
+                  </div>
+                  <a href="pages/reserve.html#bk-st" class="room-book pd16"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End: Room list -->
+        </div>
+        <!-- End: Book section -->
+
+        <div id="aboutUs" class="about-us">
+          <div class="part-header pd32">
+            <p>About us</p>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="container-about-us-item">
+                    <img src="assets/img/Room/vipRoom.jpg" alt="" />
+                    <div class="container-about-us-content">
+                      <div class="container-text">
+                        <span>" The best room ever "</span>
+                        <p>
+                          Nullam eu convallis tortor. Suspendisse potenti. In
+                          faucibus massa arcu, vitae cursus mi hendrerit nec.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="container-about-us-item">
-                  <img src="assets/img/Room/SingleRoom.jpg" alt="" />
-                  <div class="container-about-us-content">
-                    <div class="container-text">
-                      <span>" The best room ever "</span>
-                      <p>
-                        Nullam eu convallis tortor. Suspendisse potenti. In
-                        faucibus massa arcu, vitae cursus mi hendrerit nec.
-                      </p>
+                <div class="col">
+                  <div class="container-about-us-item">
+                    <img src="assets/img/Room/SingleRoom.jpg" alt="" />
+                    <div class="container-about-us-content">
+                      <div class="container-text">
+                        <span>" The best room ever "</span>
+                        <p>
+                          Nullam eu convallis tortor. Suspendisse potenti. In
+                          faucibus massa arcu, vitae cursus mi hendrerit nec.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="container-about-us-item">
-                  <img src="assets/img/Room/doubleRoom.jpg" alt="" />
-                  <div class="container-about-us-content">
-                    <div class="container-text">
-                      <span>" The best room ever "</span>
-                      <p>
-                        Nullam eu convallis tortor. Suspendisse potenti. In
-                        faucibus massa arcu, vitae cursus mi hendrerit nec.
-                      </p>
+                <div class="col">
+                  <div class="container-about-us-item">
+                    <img src="assets/img/Room/doubleRoom.jpg" alt="" />
+                    <div class="container-about-us-content">
+                      <div class="container-text">
+                        <span>" The best room ever "</span>
+                        <p>
+                          Nullam eu convallis tortor. Suspendisse potenti. In
+                          faucibus massa arcu, vitae cursus mi hendrerit nec.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -286,192 +381,230 @@ Oval rental
             </div>
           </div>
         </div>
+        <!-- End:content -->
+        <p class="embedded-map">
+          <iframe
+            class="map-frame"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3724.2480167702565!2d105.847229!3d21.022760000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab93d06bf0e9%3A0x5630d4b7aee3a42d!2zQ2FwaXRhbCBCdWlsZGluZywgNzIgVHLhuqduIEjGsG5nIMSQ4bqhbywgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2sus!4v1654012677124!5m2!1sen!2sus"
+            width="100%"
+            height="450"
+            style="border: 0; width: 100%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </p>
       </div>
       <!-- End:content -->
-      <p class="embedded-map">
-        <iframe class="map-frame"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3724.2480167702565!2d105.847229!3d21.022760000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab93d06bf0e9%3A0x5630d4b7aee3a42d!2zQ2FwaXRhbCBCdWlsZGluZywgNzIgVHLhuqduIEjGsG5nIMSQ4bqhbywgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2sus!4v1654012677124!5m2!1sen!2sus"
-          width="100%" height="450" style="border: 0; width: 100%" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </p>
-    </div>
-    <!-- End:content -->
-    <div id="footer">
-      <div class="container">
-        <div class="row rps_footer">
-          <div class="col col-sm-6 col-lg-3">
-            <div class="container-about-logo">
-              <a href="#">
-                <img src="assets/img/Logo/logo1.webp" alt="logo" class="img-logo" />
-                <p>Oval Rental</p>
-              </a>
+      <div id="footer">
+        <div class="container">
+          <div class="row rps_footer">
+            <div class="col col-sm-6 col-lg-3">
+              <div class="container-about-logo">
+                <a href="#">
+                  <img
+                    src="assets/img/Logo/logo1.webp"
+                    alt="logo"
+                    class="img-logo"
+                  />
+                  <p>Oval Rental</p>
+                </a>
+              </div>
+              <div class="container-about-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et
+                  suscipit urna. Integer eleme ntum orci eu vehicula pretium.
+                </p>
+              </div>
+              <div class="social-list">
+                <a href="#"><i class="bi bi-pinterest"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-globe2"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="col col-sm-6 col-lg-3">
+              <h2>Blog Posts</h2>
+              <div class="column-blog">
+                <div class="container-blog">
+                  <img src="assets/img/Room/affordableRoom.jpg" alt="" />
+                  <div class="container-blog-item">
+                    <h4>Travel with us this year</h4>
+                    <p>July 20, 2021</p>
+                  </div>
+                </div>
+                <div class="container-blog">
+                  <img src="assets/img/Room/doubleRoom.jpg" alt="" />
+                  <div class="container-blog-item">
+                    <h4>New destinations for you</h4>
+                    <p>July 20, 2021</p>
+                  </div>
+                </div>
+                <div class="container-blog">
+                  <img src="assets/img/Room/SingleRoom.jpg" alt="" />
+                  <div class="container-blog-item">
+                    <h4>Travel with us this year</h4>
+                    <p>July 20, 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm-6 col-lg-3">
+              <h2>Tags</h2>
+              <div class="container-tag">
+                <ul>
+                  <li>
+                    <a href="#">design</a>
+                  </li>
+                  <li>
+                    <a href="#">fashion</a>
+                  </li>
+                  <li>
+                    <a href="#">music</a>
+                  </li>
+                  <li>
+                    <a href="#">video</a>
+                  </li>
+                  <li>
+                    <a href="#">party</a>
+                  </li>
+                  <li>
+                    <a href="#">photography</a>
+                  </li>
+                  <li>
+                    <a href="#">adventure</a>
+                  </li>
+                  <li>
+                    <a href="#">travel</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col col-sm-6 col-lg-3">
+              <h2>CONTACT INFO</h2>
+              <div class="container-contact-info">
+                <i class="bi bi-hospital"></i>
+                <span> 175 Tây Sơn Đống Đa Hà Nội </span>
+              </div>
+              <div class="container-contact-info">
+                <i class="bi bi-telephone"></i>
+                <span> 0828807783 </span>
+              </div>
+              <div class="container-contact-info">
+                <i class="bi bi-envelope"></i>
+                <span> ovalrental@gmail.com </span>
+              </div>
+              <div class="container-contact-info">
+                <i class="bi bi-google"></i>
+                <span>www.google.com.vn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Modal -->
+      <div id="modal">
+        <!-- Login -->
+        <div class="modal-login">
+          <div class="modal-hd pd16">
+            <h1>Login</h1>
+            <i class="fa-solid fa-xmark pd16"></i>
+          </div>
+          <div class="modal-ct">
+            <form action="">
+              <div class="modal-id col-12 pd16">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="full-width pd8"
+                  value=""
+                  placeholder="Username"
+                />
+              </div>
+              <div class="modal-id col-12 pd16">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="full-width pd8"
+                  value=""
+                  placeholder="Password"
+                />
+              </div>
+              <div class="modal-id col-12 pd16">
+                <input type="button" class="full-width pd8" value="Submit" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-ft">
+            <div class="pd16 half-width">
+              <a href="#" id="rgChange" class="pd16"> Register now </a>
             </div>
-            <div class="container-about-text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et
-                suscipit urna. Integer eleme ntum orci eu vehicula pretium.
-              </p>
-            </div>
-            <div class="social-list">
-              <a href="#"><i class="bi bi-pinterest"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-globe2"></i></a>
-              <a href="#"><i class="bi bi-github"></i></a>
+            <div class="pd16 half-width">
+              <a href="#" class="ForgetPassword pd16"> Forget password </a>
             </div>
           </div>
-          <div class="col col-sm-6 col-lg-3">
-            <h2>Blog Posts</h2>
-            <div class="column-blog">
-              <div class="container-blog">
-                <img src="assets/img/Room/affordableRoom.jpg" alt="" />
-                <div class="container-blog-item">
-                  <h4>Travel with us this year</h4>
-                  <p>July 20, 2021</p>
-                </div>
-              </div>
-              <div class="container-blog">
-                <img src="assets/img/Room/doubleRoom.jpg" alt="" />
-                <div class="container-blog-item">
-                  <h4>New destinations for you</h4>
-                  <p>July 20, 2021</p>
-                </div>
-              </div>
-              <div class="container-blog">
-                <img src="assets/img/Room/SingleRoom.jpg" alt="" />
-                <div class="container-blog-item">
-                  <h4>Travel with us this year</h4>
-                  <p>July 20, 2021</p>
-                </div>
-              </div>
-            </div>
+        </div>
+
+        <!-- Register -->
+        <div class="modal-register">
+          <div class="modal-hd pd16">
+            <h1>Register</h1>
+            <i class="fa-solid fa-xmark pd16"></i>
           </div>
-          <div class="col col-sm-6 col-lg-3">
-            <h2>Tags</h2>
-            <div class="container-tag">
-              <ul>
-                <li>
-                  <a href="#">design</a>
-                </li>
-                <li>
-                  <a href="#">fashion</a>
-                </li>
-                <li>
-                  <a href="#">music</a>
-                </li>
-                <li>
-                  <a href="#">video</a>
-                </li>
-                <li>
-                  <a href="#">party</a>
-                </li>
-                <li>
-                  <a href="#">photography</a>
-                </li>
-                <li>
-                  <a href="#">adventure</a>
-                </li>
-                <li>
-                  <a href="#">travel</a>
-                </li>
-              </ul>
-            </div>
+          <div class="modal-ct">
+            <form action="">
+              <div class="modal-id col-12 pd16">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="full-width pd8"
+                  value=""
+                  placeholder="Username"
+                />
+              </div>
+              <div class="modal-id col-12 pd16">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="full-width pd8"
+                  value=""
+                  placeholder="Password"
+                />
+              </div>
+              <div class="modal-id col-12 pd16">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="full-width pd8"
+                  value=""
+                  placeholder="Retype password"
+                />
+              </div>
+              <div class="modal-id col-12 pd16">
+                <input type="button" class="full-width pd8" value="Submit" />
+              </div>
+            </form>
           </div>
-          <div class="col col-sm-6 col-lg-3">
-            <h2>CONTACT INFO</h2>
-            <div class="container-contact-info">
-              <i class="bi bi-hospital"></i>
-              <span> 175 Tây Sơn Đống Đa Hà Nội </span>
+          <div class="modal-ft">
+            <div class="pd16 half-width">
+              <a href="#" id="lgChange" class="pd16"> Login </a>
             </div>
-            <div class="container-contact-info">
-              <i class="bi bi-telephone"></i>
-              <span> 0828807783 </span>
-            </div>
-            <div class="container-contact-info">
-              <i class="bi bi-envelope"></i>
-              <span> ovalrental@gmail.com </span>
-            </div>
-            <div class="container-contact-info">
-              <i class="bi bi-google"></i>
-              <span>www.google.com.vn</span>
+            <div class="pd16 half-width">
+              <a href="#" class="ForgetPassword pd16"> Forget password </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Modal -->
-    <div id="modal">
-      <!-- Login -->
-      <div class="modal-login">
-        <div class="modal-hd pd16">
-          <h1>Login</h1>
-          <i class="fa-solid fa-xmark pd16"></i>
-        </div>
-        <div class="modal-ct">
-          <form action="">
-            <div class="modal-id col-12 pd16">
-              <input type="text" name="" id="" class="full-width pd8" value="" placeholder="Username" />
-            </div>
-            <div class="modal-id col-12 pd16">
-              <input type="text" name="" id="" class="full-width pd8" value="" placeholder="Password" />
-            </div>
-            <div class="modal-id col-12 pd16">
-              <input type="button" class="full-width pd8" value="Submit" />
-            </div>
-          </form>
-        </div>
-        <div class="modal-ft">
-          <div class="pd16 half-width">
-            <a href="#" id="rgChange" class="pd16"> Register now </a>
-          </div>
-          <div class="pd16 half-width">
-            <a href="#" class="ForgetPassword pd16">
-              Forget password
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Register -->
-      <div class="modal-register">
-        <div class="modal-hd pd16">
-          <h1>Register</h1>
-          <i class="fa-solid fa-xmark pd16"></i>
-        </div>
-        <div class="modal-ct">
-          <form action="">
-            <div class="modal-id col-12 pd16">
-              <input type="text" name="" id="" class="full-width pd8" value="" placeholder="Username" />
-            </div>
-            <div class="modal-id col-12 pd16">
-              <input type="text" name="" id="" class="full-width pd8" value="" placeholder="Password" />
-            </div>
-            <div class="modal-id col-12 pd16">
-              <input type="text" name="" id="" class="full-width pd8" value="" placeholder="Retype password" />
-            </div>
-            <div class="modal-id col-12 pd16">
-              <input type="button" class="full-width pd8" value="Submit" />
-            </div>
-          </form>
-        </div>
-        <div class="modal-ft">
-          <div class="pd16 half-width">
-            <a href="#" id="lgChange" class="pd16"> Login </a>
-          </div>
-          <div class="pd16 half-width">
-            <a href="#" class="ForgetPassword pd16">
-              Forget password
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script type="module" src="assets/js/indexScript.js"></script>
-  <!-- End: main -->
-</body>
-
+    <script type="module" src="assets/js/indexScript.js"></script>
+    <!-- End: main -->
+  </body>
 </html>
