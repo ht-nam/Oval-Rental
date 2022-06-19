@@ -54,6 +54,12 @@ html {
     z-index: 1;
 }
 
+#header .attach-logo{
+    margin-left: 10px;
+    line-height: 80px;
+    margin-top: 8px;
+}
+
 #header .main-title a {
     display: inline-block;
     text-decoration: none;
@@ -175,30 +181,54 @@ html {
 #banner {
     position: relative;
     margin-top: 80px;
-    padding-top: 50%;
-    background: url('../img/Banner/travel1.jpg') top center / cover no-repeat, url('/Oval-Rental/img/Banner/travel1.jpg') top center / cover no-repeat;
+    /* background: url('../img/Banner/travel1.jpg') top center / cover no-repeat, url('/Oval-Rental/img/Banner/travel1.jpg') top center / cover no-repeat; */
+}
+
+#attach-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
 #banner .text-content {
     position: absolute;
-    top: 15%;
+    top: 35%;
     text-align: center;
-    color: #000;
+    color: #fff;
+    font-weight: 600;
     width: 100%;
     text-shadow: 0 0 2px #fff;
+    margin-bottom: 30px;
 }
+
+#banner .btn-discover{
+    position: absolute;
+    top: 185%;
+    width: 100%;
+}
+
+#banner .get-explore:hover{
+    color: black;
+    background: linear-gradient(#3f87a6, #ebf8e1, #f69d3c);
+}
+
+.btn-discover .get-explore{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+}
+
 
 .text-content .text-heading {
     font-size: 72px;
     text-transform: uppercase;
     margin-bottom: 15px;
     letter-spacing: 4px;
-    font-weight: 1000;
-}
-
-.text-content .text-subheading {
-    font-size: 60px;
-    font-family: Beyond;
     font-weight: 1000;
 }
 

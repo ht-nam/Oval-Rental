@@ -4,6 +4,10 @@
         font-size: 15px !important;
     }
 
+    #banner .get-explore{
+        padding: 3px 30px;
+    }
+
     .possession-list .possession-item {
         margin-bottom: 10px;
     }
@@ -26,8 +30,14 @@
         font-size: 20px;
     }
 
+
     #order-list {
         display: none;
+    }
+
+    #banner .get-explore{
+        padding: 3px 30px;
+        font-size: 15px;
     }
 
     .possession-item {
