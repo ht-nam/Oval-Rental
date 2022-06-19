@@ -54,7 +54,7 @@ html {
     z-index: 1;
 }
 
-#header .attach-logo{
+#header .attach-logo {
     margin-left: 10px;
     line-height: 80px;
     margin-top: 8px;
@@ -176,15 +176,47 @@ html {
     display: flex;
 }
 
+/*begin: reserve banner */
+#rs-banner {
+    position: relative;
+    margin-top: 80px;
+    padding-top: 50%;
+    background: url('../img/Banner/travel1.jpg') top center / cover no-repeat, url('/Oval-Rental/img/Banner/travel1.jpg') top center / cover no-repeat;
+}
 
+#rs-banner .text-content {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    text-shadow: 0 0 2px #fff;
+}
 
+#rs-banner .text-content .text-heading {
+    font-size: 6vw;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 4px;
+    font-weight: 1000;
+}
+
+#rs-banner .text-content .text-subheading {
+    font-size: 4vw;
+    font-family: Beyond;
+    font-weight: 1000;
+}
+
+/*end: reserve banner */
+
+/*begin: Main page banner */
 #banner {
     position: relative;
     margin-top: 80px;
     /* background: url('../img/Banner/travel1.jpg') top center / cover no-repeat, url('/Oval-Rental/img/Banner/travel1.jpg') top center / cover no-repeat; */
 }
 
-#attach-video{
+#attach-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -203,18 +235,18 @@ html {
     margin-bottom: 30px;
 }
 
-#banner .btn-discover{
+#banner .btn-discover {
     position: absolute;
     top: 185%;
     width: 100%;
 }
 
-#banner .get-explore:hover{
+#banner .get-explore:hover {
     color: black;
     background: linear-gradient(#3f87a6, #ebf8e1, #f69d3c);
 }
 
-.btn-discover .get-explore{
+.btn-discover .get-explore {
     text-decoration: none;
     color: #fff;
     font-size: 24px;
@@ -223,6 +255,7 @@ html {
     border-radius: 50px;
 }
 
+/*end: Main page banner */
 
 .text-content .text-heading {
     font-size: 72px;
@@ -340,21 +373,21 @@ html {
     font-weight: 600;
 }
 
-.reserve-content .room-desc-header{
+.reserve-content .room-desc-header {
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.reserve-content .description{
-    font-family: Arial,Helvetica,sans-serif;
+.reserve-content .description {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: .6875rem;
     font-weight: 700;
     letter-spacing: .09375rem;
     line-height: 1.6;
 }
 
-.reserve-content .room-desc-content{
+.reserve-content .room-desc-content {
     padding-right: 32px;
 }
 
@@ -383,6 +416,7 @@ html {
 }
 
 .booking-section .booking-form .form-btn {
+    margin-bottom: 16px;
     background-color: #fa9e1b;
     border: none;
 }
