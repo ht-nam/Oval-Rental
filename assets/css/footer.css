@@ -1,6 +1,7 @@
 /* about-us */
 .row{
     display: flex;
+    margin-bottom: -57px;
 }
 .container-about-us-item{
     position: relative;
@@ -105,7 +106,7 @@
     color: #fff;
 }
 .column-blog{
-    padding-top: 26px;
+    padding-top: 20px;
 }
 .container-blog{
     display: flex;
@@ -174,9 +175,17 @@
 }
 .container-contact-info span:hover{
     color: orange;
-
 }
-
+.copyright {
+    text-align: center;
+    display: block;
+    margin-top: 35px;
+    color: rgb(63, 63, 40);
+    font-weight: 700;
+}
+.copyright a{
+    color: rgb(145, 147, 225);
+}
 /* end footer */
 
 /* responsive about-us */
@@ -203,7 +212,7 @@
         display: flex;
     }
 }
-@media (max-width:719px)
+@media (min-width:330px) and (max-width:719px)
 {
     .row{
         display: block ;
@@ -238,5 +247,15 @@
     }
 }
 
-
+@media (max-width: 329px){
+    .row{
+        display: block;
+    }
+    .container-text span{
+        font-size: 8px;
+    }
+    .container-text p{
+        font-size: 7px;
+    }
+}
 
